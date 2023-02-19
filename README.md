@@ -1,14 +1,14 @@
 # Random Sampling
 
 Random resampling provides a naive technique for rebalancing the class distribution for an imbalanced dataset.
-Random oversampling duplicates examples from the minority class in the training dataset and can result in overfitting for some models.
-Random undersampling deletes examples from the majority class and can result in losing information invaluable to a model.
+1. Random oversampling duplicates examples from the minority class in the training dataset and can result in overfitting for some models.
+2. Random undersampling deletes examples from the majority class and can result in losing information invaluable to a model.
 
-#SMOTE
+# SMOTE
 
 One approach to addressing imbalanced datasets is to oversample the minority class. The simplest approach involves duplicating examples in the minority class, although these examples don’t add any new information to the model. Instead, new examples can be synthesized from the existing examples. This is a type of data augmentation for the minority class and is referred to as the Synthetic Minority Oversampling Technique, or SMOTE for short.
 
-#TOMEK LINKS
+# TOMEK LINKS
 
 Tomek Links is one of a modification from Condensed Nearest Neighbors (CNN, not to be confused with Convolutional Neural Network) undersampling technique that is developed by Tomek (1976). Unlike the CNN method that are only randomly select the samples with its k nearest neighbors from the majority class that wants to be removed, the Tomek Links method uses the rule to selects the pair of observation (say, a and b) that are fulfilled these properties:
 
